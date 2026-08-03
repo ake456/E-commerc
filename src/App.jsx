@@ -34,7 +34,7 @@ function App() {
       <ScrollToTop />
 
       <AnimatePresence mode="wait">
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/favorites" element={<Favorites />} />
