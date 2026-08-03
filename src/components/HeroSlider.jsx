@@ -8,6 +8,12 @@ import banner1 from "../img/banner_Hero1.jpg";
 import banner2 from "../img/banner_Hero2.jpg";
 import banner3 from "../img/banner_Hero3.jpg";
 
+const banners = [
+  banner1,
+  banner2,
+  banner3
+];
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function HeroSlider() {
@@ -27,7 +33,7 @@ function HeroSlider() {
                                 <p>Windows Xp/10/7/8 Ps3, Tv Box</p>
                                 <Link to="/" className='btn'>Shop Now</Link>
                             </div>
-                            <img src="banner1" alt="hero" />
+                            <img src={banner1} alt="hero" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="content">
@@ -36,7 +42,7 @@ function HeroSlider() {
                                 <p>upport 3.5 mm jack audio input</p>
                                 <Link to="/" className='btn'>Shop Now</Link>
                             </div>
-                            <img src="banner2" alt="hero" />
+                            <img src={banner2} alt="hero" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="content">
@@ -45,7 +51,7 @@ function HeroSlider() {
                                 <p>AAC HD Sound Quality</p>
                                 <Link to="/" className='btn'>Shop Now</Link>
                             </div>
-                            <img src="banner3" alt="hero" />
+                            <img src={banner3} alt="hero" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
